@@ -1,0 +1,27 @@
+
+<script src="https://raw.githubusercontent.com/mozilla/localForage/master/dist/localforage.min.js"></script>
+<script>
+    let r = localforage.setItem('key', {a: 'b'})
+    console.log(r)
+    let re = localforage.getItem('key')
+    console.log(re)
+</script>
+
+<script>
+// let req = window.indexedDB.open('test-db', 3)
+// req.onerror = (e)=>{
+//   console.log(e.target.errorCode)
+// }
+// req.onsuccess = (e)=>{
+//     let db = e.target.result
+//
+//     console.log(db)
+// }
+// req.onupgradeneeded = (e)=>{
+//     let db = e.target.result
+//
+//     let objectStore = db.createObjectStore("test-object-store", { keyPath: "pkPath" })
+//     objectStore.createIndex('username', 'username', {unique: false})
+//     objectStore.createIndex('password', 'password', {unique: false})
+// }
+</script>
